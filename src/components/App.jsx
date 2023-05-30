@@ -18,13 +18,13 @@ export class App extends Component {
     return this.state.good + this.state.neutral + this.state.bad;
   };
 
-  // countPositiveFeedbackPercentage = () => {
-  //   return Math.round(
-  //     (this.state.good /
-  //       (this.state.good + this.state.neutral + this.state.bad)) *
-  //       100
-  //   );
-  // };
+  countPositiveFeedbackPercentage = () => {
+    return Math.round(
+      (this.state.good /
+        (this.state.good + this.state.neutral + this.state.bad)) *
+        100
+    );
+  };
 
   handleIncrement = event => {
     event.preventDefault();
